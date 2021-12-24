@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  </head>
+  <body>
+    <div  class="toast">
+      <h2>password Copied!</h2>
+    </div>
+    
+    <div class="pw-container">
+      <div class="heading"><h2>Password Generator</h2></div>
+
+        <div class="header">
+          <div contenteditable="true" id="password"></div>
+          <button id="copy-btn">Copy</button>
+        </div>
+
+        <div class="box">
+         <label for="password-length">password length</label>
+         <input min="8" max="16" value="8" type="number" id="password-length" > 
+        </div>
+
+         <div class="box">
+         <label for="Include Uppercase">Include Uppercase</label>
+         <input id="uppercase" type="checkbox" > 
+        </div>
+
+         <div class="box">
+         <label for="Include Lowercase">Include Lowercase</label>
+         <input id="lowercase" type="checkbox" > 
+        </div>
+
+         <div class="box">
+         <label for="Include Numbers">Include Numbers</label>
+         <input id="numbers" type="checkbox" > 
+        </div>
+
+         <div class="box">
+         <label for="Include Symbol">Include Symbol</label>
+         <input id="symbols" type="checkbox" > 
+        </div>
+
+        <button class="generate" id="generate">
+                    Generate Password
+        </button>
+
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
